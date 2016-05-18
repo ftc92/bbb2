@@ -1,0 +1,50 @@
+﻿@model MvcApplication4.Models.h
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>h</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Hall.Name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Hall.Name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.available)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.available)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.date)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.date)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.capacity)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.capacity)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
